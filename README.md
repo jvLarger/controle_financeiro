@@ -6,9 +6,8 @@ Um aplicativo Flutter para gerenciamento financeiro pessoal. Com ele, você pode
 
 - [Flutter](https://flutter.dev/)
 - [Dart](https://dart.dev/)
-- Gerenciamento de estado (Ex: Provider, Bloc, ou outro se aplicável)
-- Banco de dados local (Ex: SQLite, Hive – especifique se houver)
-- Outros pacotes Flutter (adicione aqui conforme seu projeto crescer)
+- Gerenciamento de estado
+- Banco de dados local
 
 ## 📱 Funcionalidades
 
