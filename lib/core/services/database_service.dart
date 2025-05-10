@@ -27,6 +27,13 @@ class DatabaseService {
         name TEXT NOT NULL,
         color TEXT NOT NULL
       );
+
+      CREATE TABLE categories (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        type TEXT NOT NULL CHECK (type IN ('expense', 'income'))
+      );
+
     ''');
   }
 }

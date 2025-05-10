@@ -1,3 +1,4 @@
+import 'package:controle_financeiro/pages/categories/categories_page.dart';
 import 'package:controle_financeiro/pages/tags/tags_page.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
@@ -21,7 +22,8 @@ class _PageNavigatorMaterialState extends State<PageNavigatorMaterial> {
     TransactionsPage(), // Lançamentos
     TransactionsPage(), // Faturas
     TransactionsPage(), // Contas Bancárias
-    TransactionsPage(), // Categorias
+    TransactionsPage(), // Lançamentos Recorrentes
+    CategoriesPage(), // Categorias
     TagsPage(), // TAGs
     TransactionsPage(), // Configurações
   ];
@@ -46,6 +48,11 @@ class _PageNavigatorMaterialState extends State<PageNavigatorMaterial> {
       icon: Icon(IconlyLight.folder),
       selectedIcon: Icon(IconlyBold.folder),
       label: Text('Contas'),
+    ),
+    NavigationRailDestination(
+      icon: Icon(IconlyLight.calendar),
+      selectedIcon: Icon(IconlyBold.category),
+      label: Text('Lançamentos Recorrentes'),
     ),
     NavigationRailDestination(
       icon: Icon(IconlyLight.category),
