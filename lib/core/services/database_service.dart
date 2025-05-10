@@ -24,7 +24,8 @@ class DatabaseService {
     await db.execute('''
       CREATE TABLE tags (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        nome TEXT NOT NULL
+        name TEXT NOT NULL,
+        color TEXT NOT NULL
       );
     ''');
   }

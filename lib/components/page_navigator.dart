@@ -1,11 +1,9 @@
-import 'package:controle_financeiro/core/theme/theme_controller.dart';
 import 'package:controle_financeiro/pages/tags/tags_page.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
 import 'package:controle_financeiro/pages/home/home_page.dart';
 import 'package:controle_financeiro/pages/transaction/transactions_page.dart';
-import 'package:provider/provider.dart';
 
 class PageNavigatorMaterial extends StatefulWidget {
   const PageNavigatorMaterial({super.key});
@@ -90,7 +88,7 @@ class _PageNavigatorMaterialState extends State<PageNavigatorMaterial> {
                 const SizedBox(width: 12),
                 const Text('v1.0.0', style: TextStyle(fontSize: 14)),
                 const Spacer(),
-                IconButton(
+                /*  IconButton(
                   icon: Icon(
                     Theme.of(context).brightness == Brightness.dark
                         ? Icons.dark_mode
@@ -100,6 +98,7 @@ class _PageNavigatorMaterialState extends State<PageNavigatorMaterial> {
                   onPressed:
                       () => context.read<ThemeController>().toggleTheme(),
                 ),
+                */
                 IconButton(
                   onPressed: () {},
                   icon: const Icon(Icons.info_outline),
